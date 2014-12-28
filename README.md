@@ -15,7 +15,7 @@ There is very little error checking in the code (for now).
 
 I've used this a few times very successfully and the result turns out pretty well.
 
-Usage: `perl lenticulate.pl file1.jpg file2.jpg output.jpg
+Usage: `perl lenticulate.pl file1.jpg file2.jpg output.jpg`
 
 Example files can be found at [file1.jpg](https://s3.amazonaws.com/dtoppin-images/file1.jpg), [file2.jpg](https://s3.amazonaws.com/dtoppin-images/file2.jpg) and the resulting output file at [output.jpg](https://s3.amazonaws.com/dtoppin-images/output.jpg)`
 
