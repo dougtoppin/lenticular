@@ -28,6 +28,7 @@ This depends on the perl GD image manipulation module.
 Here are a few steps that I used to get this working again on my MacBook Pro.
 
 I used Vagrant to provision an Ubuntu instance and set up Perl on it.
+The following is probably pretty close to what I did to get it going.
 
 	vagrant init hashicorp/precise32
 	vagrant up
@@ -37,4 +38,4 @@ I used Vagrant to provision an Ubuntu instance and set up Perl on it.
 	sudo apt-get install libgd-gd2-perl
 	git clone https://github.com/dougtoppin/lenticular.git
 	cd lenticular
-	perl lenticulate.pl file1.jpg file2.jpg output.jpg
+	perl lenticulate.pl ../file1.jpg ../file2.jpg output.jpg
