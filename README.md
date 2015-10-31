@@ -3,7 +3,9 @@ lenticular
 
 Script for creating lenticular images (combine two images into one that is folded to expose both).
 
-Lenticular images are the combination of two images in strips so that from one angle one image is visible and from the other angle the other image is visible.
+Lenticular images are the combination of two images in strips so that from one angle one image is visible and from the other angle the other image is visible. The effect can be pleasing particularly when the two images are related.
+In the example images below were a couple of vacation pictures. One of the group and the other of a place they visited.
+
 This is an old Perl script that I wrote to do this and will hopefully evolve to something a bit more modern and better.
 This should read strips from two input images and alternately write them to a single output file.
 The output image can then be manually folded to create a crude lenticular picture.
@@ -39,3 +41,10 @@ The following is probably pretty close to what I did to get it going.
 	git clone https://github.com/dougtoppin/lenticular.git
 	cd lenticular
 	perl lenticulate.pl ../file1.jpg ../file2.jpg output.jpg
+
+Examples of what the generated (combined and folded) images can be found at the following links.
+
+* [view1](https://cloud.githubusercontent.com/assets/1274131/10861269/5b868fe6-7f50-11e5-85ce-cce69eef28fe.jpg)
+* [view2](https://cloud.githubusercontent.com/assets/1274131/10861270/5b87aae8-7f50-11e5-982c-322a74202ab6.jpg)
+* [view3](https://cloud.githubusercontent.com/assets/1274131/10861271/5b8c26d6-7f50-11e5-8c81-a796bc36b5d5.jpg)
+
