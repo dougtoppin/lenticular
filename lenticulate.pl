@@ -1,14 +1,18 @@
 # lenticulate.pl
+
 # Usage: perl lenticulate.pl inputFile1 inputFile2 outputFile
+
 # This can be used to read strips from two input images and alternately
 # write them to an output image.  The output image can then be
 # manually folded to create a crude lenticular picture.
+
 # A description of the overall process can be found at:
 # http://photojojo.com/content/diy/how-to-make-lenticular-images/
 #
 # This depends on the perl GD image manipulation module.
 #
-# 1-Jul-2007 Doug Toppin
+#  1-Jul-2007 Doug Toppin - initial
+# 24-Nov-2016 Doug Toppin - updating
 
 # uncomment the following and the var declarations later
 # for debug if needed
@@ -39,11 +43,28 @@ use GD;
 # percent of the input images used for each slice
 my $sliceSize = 10;
 
+if ( @ARGV != 3) {
+   print "error: incorrect number of arguments\n";
+   usage($0);
+   exit(1);
+}
+
 ($infile1, $infile2, $outfile) = @ARGV;
+
+if (! -e $infile1) {
+   print "error: input file not found: ", $infile1, "\n";
+   usage($0);
+   exit(1);
+}
+if (! -e $infile2) {
+   print "error: input file not found: ", $infile2, "\n";
+   usage($0);
+   exit(1);
+}
 
 # if output file exists make the user remove it
 if (-e $outfile) {
-   print "error: output file must not exist\n";
+   print "error: output file ", $outfile, " must not exist\n";
    usage($0);
    exit(1);
 }
@@ -111,6 +132,7 @@ exit(0);
 
 sub usage() {
    print "Usage: perl $0 inputFile1 inputFile2 outputFile\n";
+   print "    Example: perl $0 infile1.jpg infile2.jpg outfile.jpg\n";
    print "    Combine two images in strips to produces a third image.\n";
    print "    The output image will be twice the width as the input.\n";
    print "    The input images must be the same width/height.\n";
