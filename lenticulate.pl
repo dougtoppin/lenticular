@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 # lenticulate.pl
 
 # Usage: perl lenticulate.pl inputFile1 inputFile2 outputFile

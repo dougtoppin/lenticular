@@ -26,10 +26,29 @@ A description of the overall process can be found at:
 
 This depends on the perl GD image manipulation module.
 
-# Instructions
-Here are a few steps that I used to get this working again on my MacBook Pro.
+You can use the included Dockerfile to run this as a container (and avoid installing anything).
 
-I used Vagrant to provision an Ubuntu instance and set up Perl on it.
+# Instructions
+Here are a few steps that I used to get this working again on my MacBook Pro (macOS Sierra).
+
+
+## Using Docker
+Run using Docker by referencing the input file directory
+as a volume. The following uses the current directory
+as the location of the input files.
+
+### Using pre-built Docker image
+
+	docker run -v $(PWD):/tmp dougtoppin/lenticular infile1.jpg infile2.jpg  outfile.jpg
+
+### Build the Docker image and run it yourself
+
+ 	docker build github.com/dougtoppin/lenticular
+	docker run -v $(PWD):/tmp IMAGEID infile1.jpg infile2.jpg  outfile.jpg
+
+
+## Using Vagrant
+To use Vagrant to provision an Ubuntu instance and set up Perl on it.
 The following is probably pretty close to what I did to get it going.
 
 	vagrant init hashicorp/precise32
@@ -47,4 +66,3 @@ Examples of what the generated (combined and folded) images can be found at the 
 * [view1](https://cloud.githubusercontent.com/assets/1274131/10861269/5b868fe6-7f50-11e5-85ce-cce69eef28fe.jpg)
 * [view2](https://cloud.githubusercontent.com/assets/1274131/10861270/5b87aae8-7f50-11e5-982c-322a74202ab6.jpg)
 * [view3](https://cloud.githubusercontent.com/assets/1274131/10861271/5b8c26d6-7f50-11e5-8c81-a796bc36b5d5.jpg)
-
