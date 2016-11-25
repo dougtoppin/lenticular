@@ -39,7 +39,7 @@ as the location of the input files.
 
 ### Using a pre-built Docker image
 
-	docker run -v $(PWD):/tmp dougtoppin/lenticular infile1.jpg infile2.jpg  outfile.jpg
+	docker run -v $(PWD):/tmp --rm dougtoppin/lenticular infile1.jpg infile2.jpg  outfile.jpg
 
 ### Build the Docker image and run it yourself
 
