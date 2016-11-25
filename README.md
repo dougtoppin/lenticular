@@ -16,12 +16,13 @@ There is very little error checking other than expected arguments. This will not
 
 I've used this a few times very successfully and the result turns out pretty well.
 
-There are several ways that you can run this. One is to ensure that you have Perl and the required GD module installed and then manually run it.
-Others are to run it as a Docker container which means all you need available is Docker or using Vagrant.
+There are several ways that you can run this. The easiest is to  run it as a Docker container which means all you need available is Docker. Docker is a free tool that you can find at https://www.docker.com/products/overview
 
+Other methods for running this are to use Vagrant or run it directly with Perl (with the required GD module installed).
 
+My preference is using Docker because then you do not have to install other tools or libraries onto your computer.
 
-A description of the overall process can be found at:
+A description of the overall process of lenticular image can be found at:
 [http://photojojo.com/content/diy/how-to-make-lenticular-images/](http://photojojo.com/content/diy/how-to-make-lenticular-images/)
 
 This depends on the perl GD image manipulation module.
@@ -72,12 +73,12 @@ Examples of what the generated (combined and folded) images can be found at the 
 
 ## Friends on vacation
 
-	[file1](https://cloud.githubusercontent.com/assets/1274131/10861269/5b868fe6-7f50-11e5-85ce-cce69eef28fe.jpg)
-	[file2](https://cloud.githubusercontent.com/assets/1274131/10861270/5b87aae8-7f50-11e5-982c-322a74202ab6.jpg)
-	[output](https://cloud.githubusercontent.com/assets/1274131/10861271/5b8c26d6-7f50-11e5-8c81-a796bc36b5d5.jpg)
+* [file1](https://cloud.githubusercontent.com/assets/1274131/10861269/5b868fe6-7f50-11e5-85ce-cce69eef28fe.jpg)
+* [file2](https://cloud.githubusercontent.com/assets/1274131/10861270/5b87aae8-7f50-11e5-982c-322a74202ab6.jpg)
+* [output](https://cloud.githubusercontent.com/assets/1274131/10861271/5b8c26d6-7f50-11e5-8c81-a796bc36b5d5.jpg)
 
 ## Wreath
 
-	[file1](https://s3.amazonaws.com/dtoppin-images/file1.jpg)
-	[file2](https://s3.amazonaws.com/dtoppin-images/file2.jpg)
-	[output](https://s3.amazonaws.com/dtoppin-images/output.jpg)
+* [file1](https://s3.amazonaws.com/dtoppin-images/file1.jpg)
+* [file2](https://s3.amazonaws.com/dtoppin-images/file2.jpg)
+* [output](https://s3.amazonaws.com/dtoppin-images/output.jpg)
