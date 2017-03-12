@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Doug Toppin dougtoppin@gmail.com
+LABEL maintainer "dougtoppin@gmail.com"
 LABEL org.label-schema.vcs-url="https://github.com/dougtoppin/lenticular"
 LABEL org.label-schema.description="Tool for creating lenticular images by combining two images"
 
